@@ -35,7 +35,12 @@
         "VIEW_COMPILED_PATH": "/tmp",
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "cookie"
+        "SESSION_DRIVER": "cookie",
+        "DB_CONNECTION": "mysql",
+        "DB_HOST": "osl88.h.filess.io",
+        "DB_PORT": "3306",
+        "DB_DATABASE": "dbsdgs6_stickearth",
+        "DB_USERNAME": "dbsdgs6_stickearth"
     },
     "outputDirectory": "public"
 }
