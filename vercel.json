@@ -1,9 +1,8 @@
 {
     "version": 2,
+    "framework": null,
     "functions": {
-        "api/index.php": {
-            "runtime": "vercel-php@0.7.3"
-        }
+        "api/index.php": { "runtime": "vercel-php@0.7.3" }
     },
     "routes": [
         {
@@ -23,10 +22,14 @@
             "dest": "/api/index.php"
         }
     ],
+    "public": true,
+    "buildCommand": "vite build",
+    "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "true",
-        "APP_URL": "https://example-atomik.vercel.app/",
+        "APP_DEBUG": "false",
+        "APP_URL": "https://yourproductionurl.com",
+        "APP_KEY": "base64:cYf/MS23zx9W4eMqhq3exTFedySVdxBA2KpCO6poays=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
@@ -41,6 +44,5 @@
         "DB_PORT": "3306",
         "DB_DATABASE": "dbsdgs6_stickearth",
         "DB_USERNAME": "dbsdgs6_stickearth"
-    },
-    "outputDirectory": "public"
+    }
 }
