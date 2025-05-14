@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-request">
     <title>SDGs 6 - Air Bersih</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon-32x32.png') }}">
     @vite('resources/css/app.css')
@@ -20,7 +21,6 @@
         <header class="absolute inset-x-0 top-0 z-50">
             <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div class="flex lg:flex-1">
-                    <!-- logo atau konten lainnya -->
                 </div>
                 <div class="flex lg:hidden">
                     <button type="button" @click="isOpen = true"
@@ -117,7 +117,7 @@
             </div>
         </header>
         <!-- Hero section -->
-        <div class="relative isolate min-h-screen px-6 pt-14 lg:px-8 bg-center bg-cover bg-blend-overlay bg-black/50"
+        <div class="relative isolate min-h-screen lg:w-full px-6 pt-14 lg:px-8 bg-center bg-cover bg-blend-overlay bg-black/50"
             style="background-image: url('/img/air.jpg')">
             <div class="mx-auto max-w-xl py-32 sm:py-48 lg:py-16">
                 <div class="hidden sm:mb-8 sm:flex sm:justify-center">
