@@ -111,7 +111,7 @@
             </div>
         </header>
         <!-- Hero section -->
-        <div class="relative isolate min-h-screen lg:w-full px-6 pt-32 lg:px-8 bg-center bg-cover bg-blend-overlay bg-black/50"
+        <div class="relative isolate min-h-screen lg:w-full px-6 pt-12 md:pt-16 lg:pt-32 lg:px-8 bg-center bg-cover bg-blend-overlay bg-black/50"
             style="background-image: url('/img/air.jpg')">
             <div class="mx-auto max-w-xl py-32 sm:py-48 lg:py-16">
                 <div class="hidden sm:mb-8 sm:flex sm:justify-center">
