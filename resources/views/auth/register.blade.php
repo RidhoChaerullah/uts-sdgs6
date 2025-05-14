@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="relative flex flex-col bg-white shadow-sm border border-slate-200 w-96 rounded-lg my-6 mx-auto mt-10">
+    <div class="relative flex flex-col bg-white shadow-sm border border-slate-200 w-full max-w-sm rounded-lg mt-10 mx-auto">
         <div class="relative m-2.5 items-center flex justify-center text-white h-24 rounded-md bg-blend-overlay bg-black/20"
             style="background-image: url('/img/air.jpg')">
             <h3 class="text-2xl font-semibold">
@@ -62,9 +62,11 @@
                 Register
             </button>
 
-            <p class="flex justify-center mt-6 text-sm text-slate-600">
+            <p class="flex justify-center text-sm text-slate-600">
                 Sudah punya akun? Langsung saja
-                <a href="{{ route('login') }}" class="ml-1 text-sm font-semibold text-slate-700 underline">
+            </p>
+            <p class="flex justify-center text-sm text-slate-600">
+                <a  href="{{ route('login') }}" class="ml-1 text-sm font-semibold text-slate-700 underline">
                     Sign In
                 </a>
             </p>

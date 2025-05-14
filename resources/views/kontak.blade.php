@@ -1,7 +1,7 @@
 <x-layout>
-    <div class="mx-auto flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg my-6 w-96">
+    <div class="relative flex flex-col bg-white shadow-sm border border-slate-200 w-full max-w-sm rounded-lg mx-auto">
         <div class="m-2.5 overflow-hidden rounded-md h-80 flex justify-center items-center">
-            <img class="w-full h-full object-cover" src="img/ridho-biru.jpg"
+            <img class="w-full h-full object-cover mt-2 rounded-md" src="img/ridho-biru.jpg"
                 alt="gambar-ridho" />
         </div>
         <div class="p-6 text-center">
@@ -12,9 +12,7 @@
                 Web Developer
             </p>
             <p class="text-base text-slate-600 mt-4 font-light ">
-                Saya adalah seorang web developer yang berpengalaman dalam membangun aplikasi web yang responsif dan
-                interaktif. Saya memiliki keahlian dalam HTML, CSS, JavaScript, dan berbagai framework modern seperti
-                Laravel dan Vue.js. Saya juga memiliki pengalaman dalam pengembangan backend menggunakan PHP dan MySQL.
+                Manusia yang berusaha untuk menjadi lebih baik setiap harinya.
             </p>
         </div>
         <div class="flex justify-center p-6 pt-2 gap-7">

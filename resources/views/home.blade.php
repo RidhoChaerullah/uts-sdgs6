@@ -5,11 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-request">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>SDGs 6 - Air Bersih</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon-32x32.png') }}">
-    @vite('resources/css/app.css')
-    <link rel="stylesheet" href="{{ asset('resources/css/app.css') }}">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -44,19 +43,17 @@
                 </div>
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                     @auth
-                        
+
                         <a href="{{ route('profile') }}"
                             class="text-slate-50 font-semibold text-sm transition ease-in-out hover:text-secondary">
                             {{ Auth::user()->name }}
                         </a>
-                        
                     @else
-                        
                         <a href="/login"
                             class="text-slate-50 font-semibold text-sm transition ease-in-out hover:text-secondary">
                             Login →
                         </a>
-                        
+
                     @endauth
                 </div>
             </nav>
@@ -75,8 +72,7 @@
                 class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                 <div class="flex items-center justify-between">
                     <a href="#" class="-m-1.5 p-1.5">
-                        <img class="h-8 w-auto"
-                            src="img/android-chrome-192x192.png" alt="Logo" />
+                        <img class="h-8 w-auto" src="img/android-chrome-192x192.png" alt="Logo" />
                     </a>
                     <button @click="isOpen = false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                         <span class="sr-only">Close menu</span>
@@ -98,34 +94,32 @@
                                 kami</a>
                         </div>
                         @auth
-                            
+
                             <a href="{{ route('profile') }}"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">
                                 {{ Auth::user()->name }}
                             </a>
-                            
                         @else
-                            
                             <a href="/login"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50">
                                 Login →
                             </a>
-                            
+
                         @endauth
                     </div>
                 </div>
             </div>
         </header>
         <!-- Hero section -->
-        <div class="relative isolate min-h-screen lg:w-full px-6 pt-14 lg:px-8 bg-center bg-cover bg-blend-overlay bg-black/50"
+        <div class="relative isolate min-h-screen lg:w-full px-6 pt-32 lg:px-8 bg-center bg-cover bg-blend-overlay bg-black/50"
             style="background-image: url('/img/air.jpg')">
             <div class="mx-auto max-w-xl py-32 sm:py-48 lg:py-16">
                 <div class="hidden sm:mb-8 sm:flex sm:justify-center">
                     <div
                         class="relative rounded-full px-3 py-1 text-sm text-slate-200 ring-1 ring-slate-100/50 hover:ring-slate-100/80">
-                        Klik untuk membaca artikel. <a href="{{ route('articles.index') }}" class="font-semibold text-secondary"><span
-                                class="absolute inset-0" aria-hidden="true"></span>Mulai baca<span
-                                aria-hidden="true">&rarr;</span></a>
+                        Klik untuk membaca artikel. <a href="{{ route('articles.index') }}"
+                            class="font-semibold text-secondary"><span class="absolute inset-0"
+                                aria-hidden="true"></span>Mulai baca<span aria-hidden="true">&rarr;</span></a>
                     </div>
                 </div>
                 <div class="text-center">
@@ -133,10 +127,12 @@
                     <h1 class="text-5xl py-5 font-semibold tracking-tight text-white sm:text-7xl"><span
                             class="text-secondary" id="auto-type"></span></h1>
                     <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">bersih kita</h1>
-                    <p class="mt-8 text-lg font-medium text-slate-200 sm:text-xl">Air bersih sangat penting untuk kesehatan, kehidupan, dan lingkungan.
+                    <p class="mt-8 text-lg font-medium text-slate-200 sm:text-xl">Air bersih sangat penting untuk
+                        kesehatan, kehidupan, dan lingkungan.
                     </p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
-                        <a href="{{ route('articles.index') }}" class="text-sm font-semibold text-white hover:text-secondary">Lebih lanjut
+                        <a href="{{ route('articles.index') }}"
+                            class="text-sm font-semibold text-white hover:text-secondary">Lebih lanjut
                             <span aria-hidden="true">→</span></a>
                     </div>
                 </div>

@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-request">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Air Bersih</title>
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-    <link rel="stylesheet" href="{{ asset('/resources/css/app.css') }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon-32x32.png') }}">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- from node_modules -->
-    <script src="node_modules/@material-tailwind/html/scripts/collapse.js"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
     <!-- from cdn -->
     <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
     
